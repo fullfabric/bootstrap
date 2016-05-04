@@ -53,6 +53,9 @@ module.exports = function (grunt) {
 
     // Task configuration.
     clean: {
+      options: {
+        force: true
+      },
       dist: 'dist',
       docs: 'docs/dist'
     },

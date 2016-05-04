@@ -54,6 +54,10 @@
     - title: Carousel
     - title: Utilities
 
+- title: Extensions
+  pages:
+    - title: Date pickers
+
 # - title: Extend
 #   pages:
 #     - title: Approach
