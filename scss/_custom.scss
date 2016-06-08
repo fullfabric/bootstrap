@@ -49,6 +49,29 @@ $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
 $brand-danger:              #d9534f !default;
 
+// Custom colors
+$grey-050: #F7F9FA;
+$grey-100: #EFF1F2;
+$grey-200: #E3E5E6;
+$grey-300: #D0D4D6;
+$grey-400: #B1B8BC;
+$grey-500: #8E979C;
+$grey-600: #6C767B;
+$grey-700: #49545A;
+$grey-800: #323D43;
+$grey-900: #1A252B;
+
+$blue-050: #E3F2FD;
+$blue-100: #BBDEFB;
+$blue-200: #90CAF9;
+$blue-300: #64B5F6;
+$blue-400: #42A5F5;
+$blue-500: #2196F3;
+$blue-600: #1E88E5;
+$blue-700: #1976D2;
+$blue-800: #1565C0;
+$blue-900: #0D47A1;
+
 
 // Options
 //
@@ -152,7 +175,7 @@ $grid-gutter-width: 30px !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: "proxima-nova", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:       $font-family-sans-serif !default;
@@ -263,7 +286,7 @@ $btn-box-shadow:                 inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px 
 $btn-active-box-shadow:          inset 0 3px 5px rgba(0,0,0,.125) !default;
 
 $btn-primary-color:              #fff !default;
-$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-bg:                 $blue-400 !default;
 $btn-primary-border:             $btn-primary-bg !default;
 
 $btn-secondary-color:            $gray-dark !default;
@@ -301,9 +324,9 @@ $split-btn-dropdown-toggle-padding-x:     8px !default;
 $split-btn-lg-dropdown-toggle-padding-x: 12px !default;
 
 // Allows for customizing button radius independently from global border radius
-$btn-border-radius:              $border-radius !default;
-$btn-border-radius-lg:           $border-radius-lg !default;
-$btn-border-radius-sm:           $border-radius-sm !default;
+$btn-border-radius:              100px !default;
+$btn-border-radius-lg:           100px !default;
+$btn-border-radius-sm:           100px !default;
 
 
 // Forms
@@ -644,12 +667,12 @@ $tag-pill-border-radius:    10rem !default;
 // Modals
 
 // Padding applied to the modal body
-$modal-inner-padding:         15px !default;
+$modal-inner-padding:         16px !default;
 
-$modal-dialog-margin:         10px !default;
-$modal-dialog-sm-up-margin-y: 30px !default;
+$modal-dialog-margin:         16px !default;
+$modal-dialog-sm-up-margin-y: 32px !default;
 
-$modal-title-padding:         15px !default;
+$modal-title-padding:         16px !default;
 $modal-title-line-height:     $line-height-base !default;
 
 $modal-content-bg:               #fff !default;

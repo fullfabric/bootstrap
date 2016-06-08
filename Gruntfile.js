@@ -51,6 +51,7 @@ module.exports = function (grunt) {
                         '  }\n' +
                         '}(jQuery);\n\n',
 
+
     // Task configuration.
     clean: {
       options: {
@@ -281,6 +282,12 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      ff: {
+        files: [
+          { src: 'dist/css/bootstrap.css', dest: '../fullfabric/clients/web/vendor/app/v4/stylesheets/bootstrap/bs4/bootstrap.css' },
+          { src: 'dist/js/bootstrap.js', dest: '../fullfabric/clients/web/vendor/app/v4/bootstrap/bs4/bootstrap.js' }
+        ]
       }
     },
 
@@ -339,6 +346,10 @@ module.exports = function (grunt) {
       docs: {
         files: 'docs/assets/scss/**/*.scss',
         tasks: ['dist-css', 'docs']
+      },
+      ff: {
+        files: ['dist/css/bootstrap.css', 'dist/js/bootstrap.js'],
+        tasks: ['copy:ff']
       }
     },
 
@@ -393,7 +404,7 @@ module.exports = function (grunt) {
           }
         ]
       }
-    }
+    },
 
   });
 
@@ -485,4 +496,6 @@ module.exports = function (grunt) {
 
   // Publish to GitHub
   grunt.registerTask('publish', ['buildcontrol:pages']);
+
+  grunt.registerTask('deploy', ['_deploy:main']);
 };
