@@ -6542,6 +6542,14 @@ a.text-danger:focus, a.text-danger:hover {
   }
 }
 
+.type-headline {
+  font-family: 'proxima-nova';
+  font-size: 26px;
+  font-weight: 400;
+  color: #1A252B;
+  color: #323D43;
+}
+
 .btn {
   font-size: 9px;
   font-weight: 700;

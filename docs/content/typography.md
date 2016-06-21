@@ -22,7 +22,7 @@ Bootstrap sets basic global display, typography, and link styles. Specifically, 
 
 These styles can be found within `_reboot.scss`, and the global variables are defined in `_variables.scss`.
 
-## Headings
+<!-- ## Headings
 
 All HTML headings, `<h1>` through `<h6>`, are available. `.h1` through `.h6` classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.
 
@@ -249,6 +249,46 @@ Align terms and descriptions horizontally by using our grid system's predefined 
   </dd>
 </dl>
 {% endexample %}
+ -->
+
+## Styles
+
+Inspired by https://material.google.com/style/typography.html#typography-typeface
+
+<div class="bd-example bd-example-type">
+  <table class="table">
+    <tbody>
+      <tr>
+        <td class='type-display-2'>Display 2</td>
+      </tr>
+      <tr>
+        <td class='type-display-1'>Display 1</td>
+      </tr>
+      <tr>
+        <td class='type-headline'>Headline</td>
+      </tr>
+      <tr>
+        <td class='type-title'>Title</td>
+      </tr>
+      <tr>
+        <td class='type-subheading'>Subheading</td>
+      </tr>
+      <tr>
+        <td class='type-body-2'>Body 2</td>
+      </tr>
+      <tr>
+        <td class='type-body-1'>Body 1</td>
+      </tr>
+      <tr>
+        <td class='type-caption'>Caption</td>
+      </tr>
+      <tr>
+        <td class='type-button'>Button</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ## Responsive typography
 

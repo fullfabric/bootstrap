@@ -1,0 +1,42 @@
+// .type-display-2
+// .type-display-1
+
+.type-headline {
+  @include font-headline;
+  color: $grey-800;
+}
+
+// .type-sub-heading
+//   @include font-sub-heading
+//   opacity: 0.55
+
+//   span
+//     vertical-align: middle
+
+//   span.icon
+//     margin-right: 8px
+
+//   span.text
+//     margin-right: 20px
+
+// .type-title
+//   font-size: 9px
+//   font-weight: 700
+//   line-height: 16px
+//   text-transform: uppercase
+//   color: $blue-800
+
+// .type-body-2
+//   font-size: 14px
+//   font-weight: 600
+//   line-height: 24px
+
+// .type-body-1
+//   font-size: 13px
+//   font-weight: 400
+//   line-height: 20px
+
+// .type-caption
+//   font-size: 12px
+//   font-weight: 400
+//   line-height: 20px

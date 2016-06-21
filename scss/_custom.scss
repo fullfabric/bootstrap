@@ -72,6 +72,33 @@ $blue-700: #1976D2;
 $blue-800: #1565C0;
 $blue-900: #0D47A1;
 
+// fonts
+$font-size-xxl: 40px;
+$font-size-xl: 26px;
+$font-size-l: 18px;
+$font-size-m: 15px;
+$font-size-s: 13px;
+$font-size-xs: 9px;
+
+$font-size-headline: 26px;
+$font-size-sub-heading: 12px;
+
+@mixin font-headline {
+  font-family: 'proxima-nova';
+    font-size: $font-size-headline;
+    font-weight: 400;
+    color: $grey-900;
+  }
+
+@mixin font-sub-heading {
+  font-family: 'proxima-nova';
+  font-size: $font-size-sub-heading;
+  font-weight: 600;
+  color: $grey-900;
+}
+
+
+
 
 // Options
 //
