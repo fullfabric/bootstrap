@@ -23,40 +23,41 @@
   pages:
     - title: Reboot
     - title: Typography
-    - title: Code
-    - title: Images
-    - title: Tables
-    - title: Figures
+    # - title: Code
+    # - title: Images
+    # - title: Tables
+    # - title: Figures
 
 - title: Components
   pages:
-    - title: Buttons
-    - title: Button group
-    - title: Button dropdown
-    - title: Forms
-    - title: Input group
-    - title: Dropdowns
-    - title: Jumbotron
-    - title: Tag
-    - title: Alerts
-    - title: Card
-    - title: Navs
-    - title: Navbar
-    - title: Breadcrumb
-    - title: Pagination
-    - title: Progress
-    - title: List group
-    - title: Modal
-    - title: Scrollspy
-    - title: Tooltips
-    - title: Popovers
-    - title: Collapse
-    - title: Carousel
+    - title: Header
+    # - title: Buttons
+    # - title: Button group
+    # - title: Button dropdown
+    # - title: Forms
+    # - title: Input group
+    # - title: Dropdowns
+    # - title: Jumbotron
+    # - title: Tag
+    # - title: Alerts
+    # - title: Card
+    # - title: Navs
+    # - title: Navbar
+    # - title: Breadcrumb
+    # - title: Pagination
+    # - title: Progress
+    # - title: List group
+    # - title: Modal
+    # - title: Scrollspy
+    # - title: Tooltips
+    # - title: Popovers
+    # - title: Collapse
+    # - title: Carousel
     - title: Utilities
 
-- title: Extensions
-  pages:
-    - title: Date pickers
+# - title: Extensions
+#   pages:
+#     - title: Date pickers
 
 # - title: Extend
 #   pages:

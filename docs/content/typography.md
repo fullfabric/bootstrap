@@ -22,8 +22,6 @@ Bootstrap sets basic global display, typography, and link styles. Specifically, 
 
 These styles can be found within `_reboot.scss`, and the global variables are defined in `_variables.scss`.
 
-<!-- ## Headings
-
 All HTML headings, `<h1>` through `<h6>`, are available. `.h1` through `.h6` classes are also available, for when you want to match the font styling of a heading but still want your text to be displayed inline.
 
 <div class="bd-example bd-example-type">
@@ -31,7 +29,7 @@ All HTML headings, `<h1>` through `<h6>`, are available. `.h1` through `.h6` cla
     <tbody>
       <tr>
         <td><h1>h1. Bootstrap heading</h1></td>
-        <td class="type-info">Semibold 36px</td>
+        <td class="type-info">Light 43px</td>
       </tr>
       <tr>
         <td><h2>h2. Bootstrap heading</h2></td>
@@ -77,7 +75,7 @@ Use the included utility classes to recreate the small secondary heading text fr
 </h3>
 {% endexample %}
 
-## Display headings
+<!-- ## Display headings
 
 Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a **display heading**—a larger, slightly more opinionated heading style.
 
@@ -105,7 +103,7 @@ Traditional heading elements are designed to work best in the meat of your page 
 <h1 class="display-2">Display 2</h1>
 <h1 class="display-3">Display 3</h1>
 <h1 class="display-4">Display 4</h1>
-{% endhighlight %}
+{% endhighlight %} -->
 
 ## Lead
 
@@ -249,46 +247,6 @@ Align terms and descriptions horizontally by using our grid system's predefined 
   </dd>
 </dl>
 {% endexample %}
- -->
-
-## Styles
-
-Inspired by https://material.google.com/style/typography.html#typography-typeface
-
-<div class="bd-example bd-example-type">
-  <table class="table">
-    <tbody>
-      <tr>
-        <td class='type-display-2'>Display 2</td>
-      </tr>
-      <tr>
-        <td class='type-display-1'>Display 1</td>
-      </tr>
-      <tr>
-        <td class='type-headline'>Headline</td>
-      </tr>
-      <tr>
-        <td class='type-title'>Title</td>
-      </tr>
-      <tr>
-        <td class='type-subheading'>Subheading</td>
-      </tr>
-      <tr>
-        <td class='type-body-2'>Body 2</td>
-      </tr>
-      <tr>
-        <td class='type-body-1'>Body 1</td>
-      </tr>
-      <tr>
-        <td class='type-caption'>Caption</td>
-      </tr>
-      <tr>
-        <td class='type-button'>Button</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
 
 ## Responsive typography
 
