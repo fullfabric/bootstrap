@@ -33,23 +33,23 @@ All HTML headings, `<h1>` through `<h6>`, are available. `.h1` through `.h6` cla
       </tr>
       <tr>
         <td><h2>h2. Bootstrap heading</h2></td>
-        <td class="type-info">Semibold 30px</td>
+        <td class="type-info">Regular 34px</td>
       </tr>
       <tr>
         <td><h3>h3. Bootstrap heading</h3></td>
-        <td class="type-info">Semibold 24px</td>
+        <td class="type-info">Regular 26px</td>
       </tr>
       <tr>
         <td><h4>h4. Bootstrap heading</h4></td>
-        <td class="type-info">Semibold 18px</td>
+        <td class="type-info">Regular 18px</td>
       </tr>
       <tr>
         <td><h5>h5. Bootstrap heading</h5></td>
-        <td class="type-info">Semibold 14px</td>
+        <td class="type-info">Semibold 12px</td>
       </tr>
       <tr>
         <td><h6>h6. Bootstrap heading</h6></td>
-        <td class="type-info">Semibold 12px</td>
+        <td class="type-info">Bold 10px</td>
       </tr>
     </tbody>
   </table>

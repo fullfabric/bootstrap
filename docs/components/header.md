@@ -7,20 +7,35 @@ group: components
 The header description here
 
 {% example html %}
-<header>
-  <breadcrumbs></breadcrumbs>
+<div class="header">
+  <div class="breadcrumbs">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item text-uppercase">
+        <a href="#" >Breadcrumb 1</a>
+      </li>
+      <li class="breadcrumb-item text-uppercase">
+        <a href="#" >Breadcrumb 2</a>
+      </li>
+      <li class="breadcrumb-item text-uppercase">
+        <a href="#" >Breadcrumb 3</a>
+      </li>
+    </ul>
+  </div>
+
   <h2>Header 2</h2>
-  <subheader>
-    <h5>Header 5</h5>
-    <h5>Header 5</h5>
-    <h5>Header 5</h5>
-  </subheader>
-</header>
+
+  <div class="subheader">
+    <h5>SubHeader 5</h5>
+    <h5>SubHeader 5</h5>
+    <h5>SubHeader 5</h5>
+  </div>
+
+</div>
 {% endexample %}
 
 
 
-## Contents
+<!-- ## Contents
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
@@ -293,3 +308,4 @@ For more complex navbar patterns, like those used in Bootstrap v3, use the `.nav
   </div>
 </nav>
 {% endexample %}
+ -->
