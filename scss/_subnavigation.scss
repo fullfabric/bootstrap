@@ -34,11 +34,12 @@
   }
 
   ul.second-level {
+    background-color: #fff;
     padding-left: 0;
     list-style-type: none;
 
     li {
-      margin-top: 12px;
+      padding-top: 12px;
 
       a {
         line-height: 16px;
@@ -63,7 +64,7 @@
     }
 
     li:last-child {
-      margin-bottom: 12px;
+      padding-bottom: 12px;
     }
   }
 }

@@ -5238,12 +5238,13 @@ button.close {
 }
 
 .subnavigation ul.second-level {
+  background-color: #fff;
   padding-left: 0;
   list-style-type: none;
 }
 
 .subnavigation ul.second-level li {
-  margin-top: 12px;
+  padding-top: 12px;
 }
 
 .subnavigation ul.second-level li a {
@@ -5264,7 +5265,7 @@ button.close {
 }
 
 .subnavigation ul.second-level li:last-child {
-  margin-bottom: 12px;
+  padding-bottom: 12px;
 }
 
 .header {
