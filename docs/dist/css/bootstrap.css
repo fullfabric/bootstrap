@@ -5209,6 +5209,36 @@ button.close {
   -webkit-appearance: none;
 }
 
+.topbar {
+  border-bottom: 1px solid #E3E5E6;
+  background-color: #fff;
+}
+
+.topbar .icon-left {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: #2196F3;
+  background-color: transparent;
+  border-radius: 4px;
+  margin: 16px;
+}
+
+.topbar .icons-right {
+  display: inline-block;
+  float: right;
+}
+
+.topbar .icons-right .actions {
+  font-size: 16px;
+  color: #8E979C;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: transparent;
+  margin: 20px 16px;
+}
+
 .subnavigation {
   padding: 16px 0 44px 0;
   background-color: #F7F9FA;
