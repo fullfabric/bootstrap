@@ -339,6 +339,10 @@ module.exports = function (grunt) {
         files: '<%= jscs.core.src %>',
         tasks: ['babel:dev']
       },
+      all: {
+        files: 'scss/**/*.scss',
+        tasks: ['dist-css', 'copy:docs', 'copy:ff']
+      },
       sass: {
         files: 'scss/**/*.scss',
         tasks: ['dist-css', 'docs']

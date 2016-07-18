@@ -1,0 +1,78 @@
+form {
+  .form-group {
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 16px;
+      color: $grey-800;
+      margin-bottom: 4px;
+    }
+
+    p {
+      margin: 0;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.5px;
+      opacity: 0.6;
+      color: $grey-800;
+    }
+
+    .form-control, .chosen-container {
+      margin-top: 4px;
+      border-radius: 4px;
+      background-color: #fff;
+      border: 1px solid rgba($grey-800, 0.3);
+      font-size: 14px;
+      line-height: 24px;
+      color: $grey-900;
+      min-height: 40px;
+      padding: 8px 12px;
+      background-clip: padding-box;
+      -webkit-background-clip: padding-box;
+    }
+
+    .form-control:hover, .chosen-container:hover {
+      border: 1px solid rgba($grey-800, 0.6);
+    }
+
+    .form-control:focus, .chosen-container:focus {
+      border: 1px solid $blue-500;
+    }
+
+    textarea.form-control {
+      height: 100px;
+    }
+
+    .chosen-container {
+      padding: 4px 4px 0 4px;
+    }
+  }
+
+  .form-group.has-danger {
+    .chosen-container, .form-control, .form-control:hover, .form-control:focus, .chosen-container:hover, .chosen-container:focus {
+      background-color: rgba(849, 849, 849, 0.3) !important;
+      border: 1px solid $error-500 !important;
+    }
+
+    .text-danger {
+      line-height: 16px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: $error-500 !important;
+    }
+  }
+
+  .form-group.required {
+    label:after {
+      content: '* required';
+      font-size: 12px;
+      line-height: 16px;
+      color: #0d47a1;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      margin-left: 8px;
+    }
+  }
+}
