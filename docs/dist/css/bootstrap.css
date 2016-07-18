@@ -5349,6 +5349,76 @@ button.close {
   margin-right: 16px;
 }
 
+.list {
+  font-family: 'proxima-nova', sans-serif;
+}
+
+.list .table > thead tr > th {
+  border-top: 0;
+  border-bottom: 1px solid #E3E5E6;
+  padding: 16px 16px 8px 16px;
+  font-size: 9px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 8px;
+  color: #0d47a1;
+}
+
+.list .table > thead tr > th:first-child {
+  padding-left: 24px;
+}
+
+.list .table > thead tr > th.active > a {
+  color: #0D47A1;
+}
+
+.list .table > thead tr > th.active > a:hover {
+  color: #2196F3;
+}
+
+.list .table > thead tr > th a {
+  color: rgba(73, 84, 90, 0.6);
+  text-decoration: none;
+}
+
+.list .table > thead tr > th a:hover {
+  color: #49545A;
+}
+
+.list .table > tbody tr:nth-of-type(odd) {
+  background-color: #fff;
+}
+
+.list .table > tbody tr:nth-of-type(even) {
+  background-color: #F7F9FA;
+}
+
+.list .table > tbody tr > td {
+  border-top: 0;
+  border-bottom: 1px solid #EFF1F2;
+  padding: 16px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.list .table > tbody tr > td:first-child {
+  padding-left: 24px;
+}
+
+.list .table > tbody tr > td.actions .item {
+  font-size: 16px;
+  color: #8E979C;
+  padding-right: 8px;
+  text-decoration: none;
+  float: right;
+}
+
+.list .table > tbody tr > td.actions .item:hover {
+  color: #49545A;
+}
+
 .modal-open {
   overflow: hidden;
 }
