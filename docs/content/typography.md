@@ -75,6 +75,20 @@ Use the included utility classes to recreate the small secondary heading text fr
 </h3>
 {% endexample %}
 
+### Custom contents
+
+{% example html %}
+<div class="primary-content">
+  Primary content
+</div>
+<div class="secondary-content">
+  Secondary content
+</div>
+<div class="terciary-content">
+  Terciary content
+</div>
+{% endexample %}
+
 <!-- ## Display headings
 
 Traditional heading elements are designed to work best in the meat of your page content. When you need a heading to stand out, consider using a **display heading**—a larger, slightly more opinionated heading style.

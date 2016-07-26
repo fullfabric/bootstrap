@@ -4,52 +4,19 @@ title: Modal
 group: components
 ---
 
-Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.
+Modal description here
 
-## Contents
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
-
-**Due to how HTML5 defines its semantics, [the `autofocus` HTML attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#attr-autofocus) has no effect in Bootstrap modals.** To achieve the same effect, use some custom JavaScript:
-
-{% highlight js %}
-$('#myModal').on('shown.bs.modal', function () {
-  $('#myInput').focus()
-})
-{% endhighlight %}
-
-{% callout warning %}
-#### Multiple open modals not supported
-
-Be sure not to open a modal while another is still visible. Showing more than one modal at a time requires custom code.
-{% endcallout %}
-
-{% callout warning %}
-#### Modal markup placement
-
-Always try to place a modal's HTML code in a top-level position in your document to avoid other components affecting the modal's appearance and/or functionality.
-{% endcallout %}
-
-{% callout warning %}
-#### Mobile device caveats
-
-There are some caveats regarding using modals on mobile devices. [See our browser support docs]({{ site.baseurl }}/getting-started/browsers-devices/#modals-and-dropdowns-on-mobile) for details.
-{% endcallout %}
-
-### Static example
-
-A rendered modal with header, body, and set of actions in the footer.
+### Basic
 
 <div class="bd-example bd-example-modal">
   <div class="modal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
+        <div class="close">
+          <a href="#" data-dismiss="modal">X</a>
+        </div>
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title">Modal title</h4>
+          <h2>Heading 02</h2>
         </div>
         <div class="modal-body">
           <p>One fine body&hellip;</p>
@@ -67,11 +34,11 @@ A rendered modal with header, body, and set of actions in the footer.
 <div class="modal fade">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
+      <div class="close">
+        <a href="#" data-dismiss="modal">X</a>
+      </div>
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title">Modal title</h4>
+        <h2>Heading 02</h2>
       </div>
       <div class="modal-body">
         <p>One fine body&hellip;</p>
@@ -79,6 +46,94 @@ A rendered modal with header, body, and set of actions in the footer.
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+{% endhighlight %}
+
+### Modal Form
+
+<div class="bd-example bd-example-modal">
+  <div class="modal">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close">
+          <a href="#" data-dismiss="modal">X</a>
+        </div>
+        <div class="modal-header">
+          <h2>Heading 02</h2>
+        </div>
+        <div class="modal-body">
+          <form>
+            <fieldset class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter name">
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label for="email">Email address</label>
+              <p class="text-muted">Maximum 300 characters</p>
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </fieldset>
+
+            <fieldset class="form-group">
+              <label for="file">Choose file</label>
+              <label class="file form-control">
+                <input type="file" id="file">
+                <span class="file-custom">
+                  <div class="text">Choose a file</div>
+                  <div class="browse">Browse</div>
+                </span>
+              </label>
+            </fieldset>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
+
+{% highlight html %}
+<div class="modal fade">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="close">
+        <a href="#" data-dismiss="modal">X</a>
+      </div>
+      <div class="modal-header">
+        <h2>Heading 02</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <fieldset class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name">
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="email">Email address</label>
+            <p class="text-muted">Maximum 300 characters</p>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </fieldset>
+
+          <fieldset class="form-group">
+            <label for="file">Choose file</label>
+            <label class="file form-control">
+              <input type="file" id="file">
+              <span class="file-custom">
+                <div class="text">Choose a file</div>
+                <div class="browse">Browse</div>
+              </span>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

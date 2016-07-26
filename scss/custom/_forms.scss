@@ -1,3 +1,11 @@
+@mixin placeholder {
+  font-size: 14px;
+  color: $grey-900;
+  opacity: 0.4;
+  line-height: 24px;
+  font-weight: 400;
+}
+
 form {
   .form-group {
     label {
@@ -30,6 +38,22 @@ form {
       padding: 8px 12px;
       background-clip: padding-box;
       -webkit-background-clip: padding-box;
+
+      &::-webkit-input-placeholder {
+        @include placeholder;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        @include placeholder;
+      }
+
+      &::-moz-placeholder {  /* Firefox 19+ */
+        @include placeholder;
+      }
+
+      &:-ms-input-placeholder {
+        @include placeholder;
+      }
     }
 
     .form-control:hover, .chosen-container:hover {
@@ -65,7 +89,7 @@ form {
   }
 
   .form-group.required {
-    label:after {
+    label:not(.file):after {
       content: '* required';
       font-size: 12px;
       line-height: 16px;
@@ -73,6 +97,63 @@ form {
       font-weight: 600;
       letter-spacing: 0.5px;
       margin-left: 8px;
+    }
+  }
+
+  .form-group.disabled {
+    .form-control, .chosen-container {
+      opacity: 1 !important;
+      background-color: rgba(#b1b8bc, 0.3);
+      ul.chosen-choices {
+        background-color: rgba(#b1b8bc, -0.1);
+      }
+    }
+  }
+
+
+  .file.form-control {
+    padding: 4px !important;
+    cursor: pointer;
+    position: relative;
+
+    input {
+      opacity: 0;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .file-custom {
+      .text {
+        opacity: 0.4;
+        color: #1a252b;
+        font-size: 14px;
+        vertical-align: -8%;
+        position: absolute;
+        top: 7px;
+        left: 12px;
+        font-weight: 400;
+
+        &.without-opacity {
+          opacity: 1;
+        }
+      }
+
+      .browse {
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        display: inline-block;
+        float: right;
+        background-color: #2196f3;
+        color: #fff;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 4px;
+        padding: 7px 15px;
+      }
     }
   }
 }
