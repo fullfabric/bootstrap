@@ -6477,25 +6477,84 @@ a.text-danger:focus, a.text-danger:hover {
 }
 
 .btn {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.btn:focus {
+  outline: 0 !important;
+}
+
+.btn-link {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  color: #2196F3;
+  text-decoration: none;
+  padding: 0;
+  text-transform: none;
+}
+
+.btn-link:hover {
+  color: #1565C0;
+  text-decoration: none;
+}
+
+.btn-link:focus {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.btn-primary {
   background-color: #2196F3;
   border: 1px solid #2196F3;
 }
 
-.btn-primary.btn-lg, .btn-group-lg > .btn-primary.btn {
+.btn-primary:hover {
+  background-color: #1565C0;
+  border: 1px solid #1565C0;
+}
+
+.btn-primary:focus {
+  color: rgba(26, 37, 43, 0.3);
+}
+
+.btn-secondary {
+  color: #49545A;
+  border: 1px solid #b1b8bc;
+  background-color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #49545A;
+  border: 1px solid #49545A;
+  color: #fff;
+}
+
+.btn-secondary:focus {
+  color: rgba(26, 37, 43, 0.3);
+}
+
+.btn-sm, .btn-group-sm > .btn {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 7px;
+  padding: 8px 16px 7px 16px;
+}
+
+.btn-lg, .btn-group-lg > .btn {
   padding: 16px 24px;
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.5px;
-  background-color: #2196F3;
-}
-
-.btn-primary.btn-lg:hover, .btn-group-lg > .btn-primary.btn:hover {
-  background-color: #1565C0;
-}
-
-.btn-primary.btn-lg:focus, .btn-group-lg > .btn-primary.btn:focus {
-  color: rgba(26, 37, 43, 0.3);
-  outline: 0;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .btn-danger {
@@ -6506,10 +6565,6 @@ a.text-danger:focus, a.text-danger:hover {
 .btn-danger:hover {
   background-color: #c62828;
   border: 1px solid #c62828;
-}
-
-.btn-danger:focus {
-  outline: 0;
 }
 
 form .form-group label {

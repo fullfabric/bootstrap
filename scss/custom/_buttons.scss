@@ -1,23 +1,82 @@
 .btn {
-  background-color: $blue-500;
-  border: 1px solid $blue-500;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: 0 !important
+  }
 }
 
-.btn-primary.btn-lg {
-  padding: 16px 24px;
-  font-size: 16px;
-  line-height: 16px;
+.btn-link {
+  font-size: 14px;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  line-height: 16px;
+  color: $blue-500;
+  text-decoration: none;
+  padding: 0;
+  text-transform: none;
+
+  &:hover {
+    color: $blue-800;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: rgba(#000, 0.3);
+    text-decoration: none;
+  }
+}
+
+.btn-primary {
   background-color: $blue-500;
+  border: 1px solid $blue-500;
 
   &:hover {
     background-color: $blue-800;
+    border: 1px solid $blue-800;
   }
 
   &:focus {
     color: rgba(#1A252B, 0.3);
-    outline: 0;
   }
+}
+
+.btn-secondary {
+  color: $grey-700;
+  border: 1px solid #b1b8bc;
+  background-color: #fff;
+
+  &:hover {
+    background-color: $grey-700;
+    border: 1px solid $grey-700;
+    color: #fff;
+  }
+
+  &:focus {
+    color: rgba(26, 37, 43, 0.3);
+  }
+}
+
+.btn-sm {
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 7px;
+  padding: 8px 16px 7px 16px;
+}
+
+.btn-lg {
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-transform: none;
+  font-weight: 400;
 }
 
 .btn-danger {
@@ -27,9 +86,5 @@
   &:hover {
     background-color: #c62828;
     border: 1px solid #c62828;
-  }
-
-  &:focus {
-    outline: 0;
   }
 }
