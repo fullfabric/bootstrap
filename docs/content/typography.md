@@ -117,7 +117,7 @@ Traditional heading elements are designed to work best in the meat of your page 
 <h1 class="display-2">Display 2</h1>
 <h1 class="display-3">Display 3</h1>
 <h1 class="display-4">Display 4</h1>
-{% endhighlight %} -->
+{% endhighlight %} 
 
 ## Lead
 
@@ -146,12 +146,13 @@ Styling for common inline HTML5 elements.
 
 `.mark` and `.small` classes are also available to apply the same styles as `<mark>` and `<small>` while avoiding any unwanted semantic implications that the tags would bring.
 
-While not shown above, feel free to use `<b>` and `<i>` in HTML5. `<b>` is meant to highlight words or phrases without conveying additional importance while `<i>` is mostly for voice, technical terms, etc.
+While not shown above, feel free to use `<b>` and `<i>` in HTML5. `<b>` is meant to highlight words or phrases without conveying additional importance while `<i>` is mostly for voice, technical terms, etc. -->
 
 ## Text utilities
 
 Change text alignment, transform, style, weight, and color with our [text utilities]({{ site.baseurl }}/components/utilities/#text-alignment).
 
+<!--
 ## Abbreviations
 
 Stylized implementation of HTML's `<abbr>` element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a `title` attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover and to users of assistive technologies.
@@ -193,7 +194,7 @@ Add `.blockquote-reverse` for a blockquote with right-aligned content.
   <p class="m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
   <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
 </blockquote>
-{% endexample %}
+{% endexample %}  -->
 
 ## Lists
 
@@ -261,7 +262,7 @@ Align terms and descriptions horizontally by using our grid system's predefined 
   </dd>
 </dl>
 {% endexample %}
-
+<!--
 ## Responsive typography
 
 *Responsive typography* refers to scaling text and components by simply adjusting the root element's `font-size` within a series of media queries. Bootstrap doesn't do this for you, but it's fairly easy to add if you need it.
@@ -291,3 +292,4 @@ html {
   }
 }
 {% endhighlight %}
+-->
