@@ -112,9 +112,10 @@ form {
 
 
   .file.form-control {
-    padding: 4px !important;
+    padding: 8px !important;
     cursor: pointer;
     position: relative;
+    margin-bottom: 0;
 
     input {
       opacity: 0;
@@ -132,6 +133,7 @@ form {
         top: 7px;
         left: 12px;
         font-weight: 400;
+        padding-top: 1px;
 
         &.without-opacity {
           opacity: 1;
@@ -152,7 +154,7 @@ form {
         text-transform: uppercase;
         font-weight: 700;
         border-radius: 4px;
-        padding: 7px 15px;
+        padding: 8px 15px;
       }
     }
   }
