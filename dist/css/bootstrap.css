@@ -6573,6 +6573,7 @@ form .form-group label {
   line-height: 16px;
   color: #323D43;
   margin-bottom: 4px;
+  width: 100%;
 }
 
 form .form-group p {
