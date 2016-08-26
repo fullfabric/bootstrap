@@ -61,7 +61,7 @@
 
   .right {
     @include make-col(6);
-    padding: 22px 0;
+    padding: 22px 15px 0 15px;
 
     a {
       padding: 9px 16px;
