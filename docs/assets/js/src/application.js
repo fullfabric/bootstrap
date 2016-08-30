@@ -15,6 +15,9 @@
   'use strict';
 
   $(function () {
+    $('textarea#text-editor').redactor({
+      height: 200
+    })
 
     // Tooltip and popover demos
     $('.tooltip-demo').tooltip({

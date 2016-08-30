@@ -79,9 +79,7 @@ module.exports = function (grunt) {
           'js/dist/scrollspy.js' : 'js/src/scrollspy.js',
           'js/dist/tab.js'       : 'js/src/tab.js',
           'js/dist/tooltip.js'   : 'js/src/tooltip.js',
-          'js/dist/popover.js'   : 'js/src/popover.js',
-          'js/dist/vendor/redactor/redactor.js'  : 'js/src/vendor/redactor/redactor.js',
-          'js/dist/vendor/redactor/redactor-langs.js'  : 'js/src/vendor/redactor/redactor-langs.js'
+          'js/dist/popover.js'   : 'js/src/popover.js'
         }
       },
       dist: {
@@ -107,9 +105,7 @@ module.exports = function (grunt) {
           'dist/js/umd/scrollspy.js' : 'js/src/scrollspy.js',
           'dist/js/umd/tab.js'       : 'js/src/tab.js',
           'dist/js/umd/tooltip.js'   : 'js/src/tooltip.js',
-          'dist/js/umd/popover.js'   : 'js/src/popover.js',
-          'dist/js/umd/vendor/redactor/redactor.js'  : 'js/src/vendor/redactor/redactor.js',
-          'dist/js/umd/vendor/redactor/redactor-langs.js'  : 'js/src/vendor/redactor/redactor-langs.js'
+          'dist/js/umd/popover.js'   : 'js/src/popover.js'
         }
       }
     },
@@ -174,9 +170,7 @@ module.exports = function (grunt) {
           'js/src/scrollspy.js',
           'js/src/tab.js',
           'js/src/tooltip.js',
-          'js/src/popover.js',
-          'js/src/vendor/redactor/redactor.js',
-          'js/src/vendor/redactor/redactor-langs.js'
+          'js/src/popover.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
@@ -346,7 +340,7 @@ module.exports = function (grunt) {
         tasks: ['babel:dev']
       },
       all: {
-        files: ['scss/**/*.scss', 'js/**/*js'],
+        files: ['scss/**/*.scss', 'js/**/*.js', 'docs/**/*.md'],
         tasks: ['dist-css', 'dist-js', 'copy:docs', 'copy:ff']
       },
       sass: {
