@@ -91,10 +91,10 @@
 <loc>http://getbootstrap.com/</loc>
 </url>
 <url>
-<loc>http://getbootstrap.com/examples/</loc>
+<loc>http://getbootstrap.com/extend/</loc>
 </url>
 <url>
-<loc>http://getbootstrap.com/extend/</loc>
+<loc>http://getbootstrap.com/examples/</loc>
 </url>
 <url>
 <loc>http://getbootstrap.com/components/input-group/</loc>
@@ -167,6 +167,9 @@
 </url>
 <url>
 <loc>http://getbootstrap.com/about/team/</loc>
+</url>
+<url>
+<loc>http://getbootstrap.com/components/text-editor/</loc>
 </url>
 <url>
 <loc>http://getbootstrap.com/components/tooltips/</loc>
