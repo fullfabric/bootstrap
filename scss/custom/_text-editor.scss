@@ -1,0 +1,48 @@
+.text-editor {
+  .editor {
+    position: relative;
+    width: 700px;
+
+    .actions {
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      z-index: 9999;
+
+      button {
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+
+    .redactor-box {
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      margin-bottom: 0;
+
+      ul.redactor-toolbar {
+        position: relative !important;
+        top: 0 !important;
+        box-shadow: none;
+        background-color: #EFF1F2;
+
+        li > a {
+          padding: 14px 10px;
+        }
+      }
+
+      .redactor-editor {
+        padding-top: 10px !important;
+        border: none;
+        background-color: #fafafa;
+        line-height: 24px;
+        font-family: "proxima-nova", sans-serif;
+
+        &:focus {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

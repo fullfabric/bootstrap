@@ -11,6 +11,8 @@ The text editor description here
   <div class="editor">
     <textarea id="text-editor" rows="20"></textarea>
     <div class="actions">
+      <button class="btn btn-sm btn-secondary cancel">Cancel</button>
+      <button class="btn btn-sm btn-primary save">Save</button>
     </div>
   </div>
 </div>

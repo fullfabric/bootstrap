@@ -7149,4 +7149,50 @@ form .file.form-control .file-custom .browse {
   padding: 0 24px;
   margin-bottom: 40px;
 }
+
+.text-editor .editor {
+  position: relative;
+  width: 700px;
+}
+
+.text-editor .editor .actions {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  z-index: 9999;
+}
+
+.text-editor .editor .actions button:focus {
+  outline: 0;
+}
+
+.text-editor .editor .redactor-box {
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  margin-bottom: 0;
+}
+
+.text-editor .editor .redactor-box ul.redactor-toolbar {
+  position: relative !important;
+  top: 0 !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #EFF1F2;
+}
+
+.text-editor .editor .redactor-box ul.redactor-toolbar li > a {
+  padding: 14px 10px;
+}
+
+.text-editor .editor .redactor-box .redactor-editor {
+  padding-top: 10px !important;
+  border: none;
+  background-color: #fafafa;
+  line-height: 24px;
+  font-family: "proxima-nova", sans-serif;
+}
+
+.text-editor .editor .redactor-box .redactor-editor:focus {
+  background-color: #fff;
+}
 /*# sourceMappingURL=bootstrap.css.map */
