@@ -46,20 +46,21 @@
         color: $grey-700;
         background-color: transparent;
         padding: 0 16px 0 16px;
+        font-size: 12px;
       }
     }
 
     li:hover {
       a {
-        color: $blue-800;
+        color: $blue-500;
       }
     }
 
     li {
       a.active {
         padding-left: 14px;
-        color: $blue-500;
-        border-left: 2px solid #0094f7;
+        color: $blue-700;
+        border-left: 2px solid $blue-600;
       }
     }
 
