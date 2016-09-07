@@ -54,7 +54,9 @@ module.exports = function (grunt) {
     // Task configuration.
     clean: {
       dist: 'dist',
-      docs: 'docs/dist'
+      docs: 'docs/dist',
+      ffdist: 'fullfabric/dist',
+      ffdocs: 'fullfabric/docs/dist'
     },
 
     // JS build configuration
@@ -265,8 +267,8 @@ module.exports = function (grunt) {
         ]
       },
       docs: {
-        src: 'docs/assets/css/docs.min.css',
-        dest: 'docs/assets/css/docs.min.css'
+        src: 'fullfabric/docs/assets/css/docs.min.css',
+        dest: 'fullfabric/docs/assets/css/docs.min.css'
       }
     },
 
@@ -278,6 +280,19 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      ffcss: {
+        files: [
+          { src: 'fullfabric/dist/css/fullfabric.css', dest: '../fullfabric/clients/web/vendor/app/v4/stylesheets/bootstrap/bs4/bootstrap.css' }
+        ]
+      },
+      ffdocs: {
+        expand: true,
+        cwd: 'fullfabric/dist/',
+        src: [
+          '**/*'
+        ],
+        dest: 'fullfabric/docs/dist/'
       }
     },
 
@@ -456,6 +471,13 @@ module.exports = function (grunt) {
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
+
+  // Full Fabric tasks
+  grunt.registerTask('ff-sass-compile', ['sass:ffcore']);
+  grunt.registerTask('ff-dist-css', ['ff-sass-compile']);
+  grunt.registerTask('ff-dist', ['clean:ffdist', 'ff-dist-css']);
+  grunt.registerTask('ff-docs', ['clean:ffdocs', 'copy:ffdocs']);
+  grunt.registerTask('copy-ff-css', ['copy:ffcss']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'test']);

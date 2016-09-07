@@ -18,6 +18,12 @@ module.exports = function configureRubySass(grunt) {
           'dist/css/<%= pkg.name %>.css': 'scss/<%= pkg.name %>.scss'
         }
       },
+      ffcore: {
+        options: options,
+        files: {
+          'fullfabric/dist/css/fullfabric.css': 'fullfabric/scss/fullfabric.scss'
+        }
+      },
       extras: {
         options: options,
         files: {

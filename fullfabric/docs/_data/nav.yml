@@ -1,0 +1,17 @@
+- title: Getting started
+  pages:
+    - title: Introduction
+
+- title: Content
+  pages:
+    - title: Typography
+
+- title: Components
+  pages:
+    - title: Forms
+    - title: Lists
+    - title: Modal
+    - title: Text editor
+    - title: Header
+    - title: Topbar
+    - title: Subnavigation

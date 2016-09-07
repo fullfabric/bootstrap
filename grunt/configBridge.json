@@ -4,6 +4,8 @@
       "../assets/js/vendor/anchor.min.js",
       "../assets/js/vendor/clipboard.min.js",
       "../assets/js/vendor/holder.min.js",
+      "../assets/js/vendor/redactor.js",
+      "../assets/js/vendor/redactor-lang.js",
       "../assets/js/src/application.js"
     ]
   }

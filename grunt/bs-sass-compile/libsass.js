@@ -16,6 +16,11 @@ module.exports = function configureLibsass(grunt) {
           'dist/css/<%= pkg.name %>.css': 'scss/<%= pkg.name %>.scss'
         }
       },
+      ffcore: {
+        files: {
+          'fullfabric/dist/css/fullfabric.css': 'fullfabric/scss/fullfabric.scss'
+        }
+      },
       extras: {
         files: {
           'dist/css/<%= pkg.name %>-flex.css': 'scss/<%= pkg.name %>-flex.scss',

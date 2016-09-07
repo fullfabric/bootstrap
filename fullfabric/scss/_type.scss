@@ -1,0 +1,31 @@
+//
+// Headings
+//
+
+h5, .h5 { font-size: $font-size-h5; opacity: 0.6; }
+
+.type-headline {
+  @include font-headline;
+  color: $grey-800;
+}
+
+.primary-content {
+  font-size: 13px;
+  line-height: 16px;
+  color: $grey-800;
+}
+
+.secondary-content, .terciary-content {
+  font-size: 12px;
+  opacity: 0.6;
+  color: $grey-800;
+  line-height: 16px;
+}
+
+.secondary-content {
+  font-weight: 600;
+}
+
+.terciary-content {
+  font-weight: 400;
+}
