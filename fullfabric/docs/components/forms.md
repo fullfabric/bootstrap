@@ -4,7 +4,7 @@ title: Forms
 group: components
 ---
 
-Forms description description here
+Forms description goes here.
 
 ## Text input
 
