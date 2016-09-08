@@ -25,7 +25,7 @@ The header description here
       </ul>
     </div>
 
-    <h3>Header 2</h3>
+    <h3>Header 3</h3>
 
     <div class="subheader">
       <h5>SubHeader 5</h5>
@@ -57,7 +57,7 @@ The header description here
       </ul>
     </div>
 
-    <h3>Header 2</h3>
+    <h3>Header 3</h3>
 
     <div class="subheader">
       <h5>SubHeader 5</h5>

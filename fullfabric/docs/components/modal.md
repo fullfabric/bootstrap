@@ -22,7 +22,7 @@ Modal description here
           <p>One fine body&hellip;</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
           <button type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div><!-- /.modal-content -->
@@ -44,7 +44,7 @@ Modal description here
         <p>One fine body&hellip;</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div><!-- /.modal-content -->
@@ -90,7 +90,7 @@ Modal description here
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn-lg btn-primary">Submit</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
@@ -133,7 +133,7 @@ Modal description here
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary">Submit</button>
+        <button type="button" class="btn-lg btn-primary">Submit</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
