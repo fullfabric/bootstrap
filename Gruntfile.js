@@ -55,8 +55,9 @@ module.exports = function (grunt) {
     clean: {
       dist: 'dist',
       docs: 'docs/dist',
-      ffdist: 'fullfabric/dist',
-      ffdocs: 'fullfabric/docs/dist'
+      ffDistCss: 'fullfabric/dist/css',
+      ffDistJs:  'fullfabric/dist/js',
+      ffDocs:    'fullfabric/docs/dist'
     },
 
     // JS build configuration
@@ -281,18 +282,26 @@ module.exports = function (grunt) {
         ],
         dest: 'docs/dist/'
       },
-      ffcss: {
-        files: [
-          { src: 'fullfabric/dist/css/fullfabric.css', dest: '../fullfabric/clients/web/vendor/app/v4/stylesheets/bootstrap/bs4/bootstrap.css' }
-        ]
-      },
-      ffdocs: {
+      ffDocsCss: {
         expand: true,
         cwd: 'fullfabric/dist/',
         src: [
-          '**/*'
+          '**/*.css*'
         ],
-        dest: 'fullfabric/docs/dist/'
+        dest: 'fullfabric/docs/dist'
+      },
+      ffDocsJs: {
+        expand: true,
+        cwd: 'dist/',
+        src: [
+          '**/*.js*'
+        ],
+        dest: 'fullfabric/docs/dist'
+      },
+      ffDeploy: {
+        files: [
+          { src: 'fullfabric/dist/css/fullfabric.css', dest: '../fullfabric/clients/web/vendor/app/v4/stylesheets/bootstrap/bs4/bootstrap.css' }
+        ]
       }
     },
 
@@ -473,11 +482,10 @@ module.exports = function (grunt) {
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
 
   // Full Fabric tasks
-  grunt.registerTask('ff-sass-compile', ['sass:ffcore']);
-  grunt.registerTask('ff-dist-css', ['ff-sass-compile']);
-  grunt.registerTask('ff-dist', ['clean:ffdist', 'ff-dist-css']);
-  grunt.registerTask('ff-docs', ['clean:ffdocs', 'copy:ffdocs']);
-  grunt.registerTask('copy-ff-css', ['copy:ffcss']);
+  grunt.registerTask('ff-dist-css', ['clean:ffDistCss', 'sass:ffcore']);
+  grunt.registerTask('ff-dist-js', ['clean:ffDistJs', 'dist-js']);
+  grunt.registerTask('ff-copy-docs', ['clean:ffDocs', 'copy:ffDocsCss', 'copy:ffDocsJs']);
+  grunt.registerTask('ff-deploy-css', ['copy:ffDeploy']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'test']);
