@@ -2,6 +2,7 @@
   .editor {
     position: relative;
     width: 700px;
+    background-color: transparent;
 
     .actions {
       position: absolute;
@@ -26,6 +27,7 @@
         top: 0 !important;
         box-shadow: none;
         background-color: #EFF1F2;
+        border-radius: 2px 2px 0px 0px;
 
         li > a {
           padding: 14px 10px;
@@ -36,6 +38,7 @@
         padding-top: 10px !important;
         border: none;
         background-color: #fafafa;
+        border-radius: 0px 0px 2px 2px;
         line-height: 24px;
         font-family: "proxima-nova", sans-serif;
 
