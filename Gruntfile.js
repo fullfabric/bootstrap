@@ -391,7 +391,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:twbs/derpstrap.git',
+          remote: 'git@github.com:fullfabric/bootstrap.git',
           branch: 'gh-pages'
         }
       }
