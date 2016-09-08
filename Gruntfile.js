@@ -360,6 +360,10 @@ module.exports = function (grunt) {
       docs: {
         files: 'docs/assets/scss/**/*.scss',
         tasks: ['dist-css', 'docs']
+      },
+      ff: {
+        files: 'fullfabric/scss/**/*.scss',
+        tasks: ['ff-dist-css', 'ff-copy-docs']
       }
     },
 
